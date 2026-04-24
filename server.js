@@ -9,7 +9,7 @@ const Student = require('./models/Student');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-aapp.use(cors({
+app.use(cors({
   origin: [
     "http://localhost:3000",
     "https://lendi-certification-frontend.vercel.app"
