@@ -9,12 +9,9 @@ const Student = require('./models/Student');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "https://lendi-certification-frontend.vercel.app"
-  ]
-}));
+const cors = require('cors');
+
+app.use(cors());
 
 // MongoDB connection
 mongoose.connect(process.env.MONGODB_URI)
